@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("This is a test Java file");
+        if (args.length > 0) {
+            String name = args[0];
+            System.out.println("Hello, " + name + "! This is a test Java file.");
+        } else {
+            System.out.println("No name provided. This is a test Java file.");
+        }
     }
 }
