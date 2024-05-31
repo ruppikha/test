@@ -24,7 +24,7 @@ public class Main {
                 "<body>" +
                 "    <h1>Java Application Output</h1>" +
                 "    <div id=\"output\">" +
-                "        <p>Hello, " + name + "!</p>" +
+                "        <p>Hello, " + name + "! This is a test file.</p>" +
                 "    </div>" +
                 "</body>" +
                 "</html>";
