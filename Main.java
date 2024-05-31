@@ -7,7 +7,6 @@ public class Main {
         if (args.length > 0) {
             String name = args[0];
             System.out.println("Hello, " + name + "! This is a test Java file.");
-            generateHtmlFile(name);
         } else {
             System.out.println("No name provided. This is a test Java file.");
         }
