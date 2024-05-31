@@ -27,9 +27,15 @@ public class Main {
                 "    </div>" +
                 "</body>" +
                 "</html>";
-
-        try (FileWriter fileWriter = new FileWriter("docs/index.html")) { 
-            fileWriter.write(htmlContent);
+        
+        try {
+            File docsDir = new File("docs");
+            if (!docsDir.exists()) {
+                docsDir.mkdirs();
+            }
+            try (FileWriter fileWriter = new FileWriter("docs/index.html")) { 
+                fileWriter.write(htmlContent);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
